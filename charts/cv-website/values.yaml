@@ -1,0 +1,15 @@
+replicaCount: 2
+
+image:
+  replicaCount: 2
+
+image:
+  repository: eneskaqandolli/cv-website
+  tag: sha-bb4ef6d
+  pullPolicy: IfNotPresent
+
+containerPort: 8080
+
+service:
+  type: ClusterIP
+  port: 80
